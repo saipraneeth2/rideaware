@@ -6,6 +6,8 @@
 > and the automated unit tests in `RideAwareTests` were run there. Everything in
 > [docs/DEVICE_TEST_MATRIX.md](docs/DEVICE_TEST_MATRIX.md) is still unrun. Do not rely on it while riding.
 
+Built with AI assistance (Claude).
+
 A native iPhone prototype that gives cyclists short spoken awareness alerts through AirPods
 and private group-ride messages. Its research question is whether useful **acoustic** awareness
 of approaching vehicles can work **without** extra radar hardware.
@@ -21,7 +23,7 @@ silence as "nothing reported", never as "safe".
 ## Contents
 
 | Document | Purpose |
-|---|---|
+|-|-|
 | [docs/FEASIBILITY.md](docs/FEASIBILITY.md) | Toolchain, verified APIs, AirPods HQ recording constraints, risks |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Component diagram, audio session ownership, extension points |
 | [docs/TEST_RESULTS.md](docs/TEST_RESULTS.md) | Automated test results and coverage gaps |
@@ -81,7 +83,7 @@ conclusion.
 ## Working vs simulated vs unavailable
 
 | Feature | Status |
-|---|---|
+|-|-|
 | Onboarding with limitations | ✅ Working |
 | Ride start/stop, timer, local ride storage (JSON, no audio or location) | ✅ Working, unit-tested |
 | Microphone permission request and denied state | ✅ Working, unit-tested with fakes |

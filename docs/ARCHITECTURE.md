@@ -25,7 +25,7 @@ No third-party dependencies.
 ## Principles
 
 | Principle | Where it is enforced |
-|---|---|
+|-|-|
 | One owner of audio-session settings | `AudioSessionCoordinator` is the only type that calls `setCategory`, `setActive` or `setPreferredInput`. Features hold *demands* (`microphoneSensing`, `spokenPrompt`, `samplePlayback`, `voiceChat`). `SessionPlanner` turns the union into one plan; the coordinator applies it only when it changes. |
 | Voice and sensing are separate modes | `SessionPlanner` throws `conflictingDemands` for `voiceChat` + `microphoneSensing` (tested). |
 | Monitoring health is separate from traffic events | `StreamHealth` and `MonitoringSnapshot` versus `DetectionEvent` and `AlertLogEntry`; separate dashboard cards. |

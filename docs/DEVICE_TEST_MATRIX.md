@@ -10,7 +10,7 @@ public-road observation, and do not treat road use as evidence of reliability.
 ## A. Audio routing and capture
 
 | # | Input | Output | Check | Expected / record | Result |
-|---|---|---|---|---|---|
+|-|-|-|-|-|-|
 | A1 | iPhone mic (Automatic) | iPhone speaker | Ride start, mic health Live, format shown | Format and sample rate in Diagnostics | ? |
 | A2 | iPhone mic (Automatic) | AirPods (A2DP) | Mic stays iPhone, output AirPods, music quality unchanged | Route rows; subjective music quality | ? |
 | A3 | AirPods mic (HFP) | AirPods (HFP) | Input switches to AirPods; note music degradation | Input sample rate (expect narrow-band) | ? |
@@ -23,7 +23,7 @@ public-road observation, and do not treat road use as evidence of reliability.
 ## B. Interruptions and failures
 
 | # | Scenario | Expected behaviour | Result |
-|---|---|---|---|
+|-|-|-|-|
 | B1 | AirPods removed or powered off mid-ride | "Headphones disconnected" incident; speech uses the speaker only if fallback is on; capture restarts | ? |
 | B2 | AirPods reconnect mid-ride | Route updates; capture restarts; no crash | ? |
 | B3 | Incoming phone call (answer, then hang up) | Mic health Interrupted; after the call, capture resumes and "Monitoring resumed" is spoken if it had stopped | ? |
@@ -37,7 +37,7 @@ public-road observation, and do not treat road use as evidence of reliability.
 ## C. Background and lock screen
 
 | # | Scenario | Expected / record | Result |
-|---|---|---|---|
+|-|-|-|-|
 | C1 | Lock the screen during a ride with the mic on | Capture continues (buffers keep increasing); spoken simulated alerts still play | ? |
 | C2 | Lock the screen in simulation with the mic off | Expected: app suspends between prompts. Confirm and document | ? |
 | C3 | Switch to Maps or Music during a ride | Capture continues; music mixes with alerts | ? |
@@ -48,7 +48,7 @@ public-road observation, and do not treat road use as evidence of reliability.
 Record 15 s consented samples for each condition. Note the microphone position (pocket, bar mount, AirPods).
 
 | # | Condition | Record | Result |
-|---|---|---|---|
+|-|-|-|-|
 | D1 | Stationary, quiet | Noise floor dBFS per input | ? |
 | D2 | Riding at 15, 25 and 35 km/h, no traffic | Wind noise level per input and mount | ? |
 | D3 | Mic covered by a jersey pocket or bag | Level drop | ? |
@@ -61,7 +61,7 @@ Record 15 s consented samples for each condition. Note the microphone position (
 ## E. Network (Milestone 3)
 
 | # | Scenario | Expected | Result |
-|---|---|---|---|
+|-|-|-|-|
 | E1 | Network lost mid-group-ride | Presence turns stale; reports queue or fail visibly | N/A (no transport) |
 | E2 | Reconnect | Presence recovers; no duplicate reports | N/A |
 | E3 | Leave group with sharing on | Location stops immediately on device and server | N/A |
@@ -69,7 +69,7 @@ Record 15 s consented samples for each condition. Note the microphone position (
 ## F. Battery and latency
 
 | # | Measure | Method | Result |
-|---|---|---|---|
+|-|-|-|-|
 | F1 | Battery per hour with mic on, simulation | Start/end battery %, Instruments Energy Log | ? |
 | F2 | Battery per hour with the AirPods HQ route | Same | ? |
 | F3 | Alert latency: event to first audible sound | Screen and audio recording, or instrumented log | ? |

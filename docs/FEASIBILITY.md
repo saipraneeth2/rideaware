@@ -15,7 +15,7 @@ radar-free acoustic path.
 ## What the public platform provides (verified)
 
 | Capability | Source | Status |
-|---|---|---|
+|-|-|-|
 | Microphone capture with `AVAudioEngine` input tap | AVFAudio | Implemented. Runs on simulator (Mac mic). |
 | Record permission via `AVAudioApplication` (iOS 17+) | SDK header `AVAudioApplication.h` | Implemented. |
 | Current route, available inputs, preferred input | `AVAudioSession` | Implemented. |

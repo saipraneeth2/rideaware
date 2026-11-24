@@ -47,7 +47,7 @@ record in controlled settings, and strip or reject clips containing identifiable
 ## Step 4: Metrics to report (for any model)
 
 | Metric | Definition |
-|---|---|
+|-|-|
 | Missed events | Fraction of ground-truth approaching vehicles with no alert before closest pass |
 | False alerts per hour | Alerts with no ground-truth vehicle within the matching window, per hour of riding audio |
 | Warning lead time | Closest-pass time minus first-alert time, as median and 10th percentile |

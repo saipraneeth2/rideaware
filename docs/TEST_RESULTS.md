@@ -3,7 +3,7 @@
 Run 2026-11-24 with Xcode 27.2 and Swift Testing. Hosted unit tests (`RideAwareTests`).
 
 | Destination | Result |
-|---|---|
+|-|-|
 | iPhone 17 simulator, iOS 27.2 | **88 tests in 17 suites passed** |
 | iPhone 17 simulator, iOS 26.4 (deployment minimum) | **88 tests in 17 suites passed** |
 | App build, Debug, iOS 27.2 simulator | Succeeded, 0 warnings, Swift 6 strict concurrency |
@@ -13,7 +13,7 @@ Run 2026-11-24 with Xcode 27.2 and Swift Testing. Hosted unit tests (`RideAwareT
 ## Suites
 
 | Suite | What it covers |
-|---|---|
+|-|-|
 | Alert de-duplication, cooldown and stale rejection | Sliding de-duplication, a continuous sound giving exactly one alert, per-kind cooldown, max-age boundary, stale events not consuming state, future timestamps, out-of-order duplicates |
 | Alert coordinator | Conservative wording, "Simulation." prefix, logging of suppressed and rejected events, speech disabled, reset per ride |
 | Stream health | Off, starting, live and stale transitions; input before a restart ignored; precedence of permission denied over failure over interruption |

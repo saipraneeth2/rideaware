@@ -142,7 +142,7 @@ private struct MicrophoneSection: View {
             }
             LabeledContent("Permission", value: mic.permission.label)
             LabeledContent("Health", value: "\(mic.health.label): \(mic.health.detail)")
-            LabeledContent("Format", value: mic.format?.description ?? "—")
+            LabeledContent("Format", value: mic.format?.description ?? "Not available")
             LabeledContent("Buffers received", value: "\(mic.buffersReceived)")
             LabeledContent("Restarts", value: "\(mic.restartCount)")
             TimelineView(.periodic(from: .now, by: 0.5)) { context in
@@ -238,7 +238,7 @@ private struct AlertLogSection: View {
             }
             ForEach(env.alerts.log.prefix(30)) { entry in
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("\(entry.event.kind.displayLabel) — \(entry.decision.label)")
+                    Text("\(entry.event.kind.displayLabel): \(entry.decision.label)")
                         .font(.subheadline.weight(.semibold))
                     Text("\(entry.event.source.displayName) · observed \(entry.event.sourceTimestamp.formatted(date: .omitted, time: .standard)) · decided \(entry.decidedAt.formatted(date: .omitted, time: .standard))\(entry.spoken ? " · spoken" : "")")
                         .font(.caption).foregroundStyle(.secondary)
