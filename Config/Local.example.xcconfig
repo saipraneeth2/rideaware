@@ -1,0 +1,8 @@
+// Copy this file to Config/Local.xcconfig (git-ignored) and fill in your values.
+// Required only for running on a physical iPhone. The simulator builds without it.
+
+// Your Apple Developer Team ID (Xcode > Settings > Accounts, or developer.apple.com/account).
+DEVELOPMENT_TEAM = YOUR_TEAM_ID
+
+// A reverse-DNS prefix you control, so the bundle ID is unique to you.
+RIDEAWARE_BUNDLE_ID_PREFIX = com.yourname

@@ -1,0 +1,13 @@
+# Local signing and secrets
+Config/Local.xcconfig
+Config/secrets.env
+*.env
+!Config/secrets.example.env
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcresult
+.DS_Store

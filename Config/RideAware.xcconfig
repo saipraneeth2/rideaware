@@ -1,0 +1,9 @@
+// RideAware shared build settings.
+// Never put credentials, API keys or tokens in this file; it is committed to source control.
+// To sign for a physical device, copy Local.example.xcconfig to Local.xcconfig (git-ignored)
+// and set your own team and bundle prefix there.
+
+RIDEAWARE_BUNDLE_ID_PREFIX = com.example
+PRODUCT_BUNDLE_IDENTIFIER = $(RIDEAWARE_BUNDLE_ID_PREFIX).RideAware
+
+#include? "Local.xcconfig"
